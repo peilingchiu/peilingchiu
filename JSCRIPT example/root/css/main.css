@@ -1,0 +1,78 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: palegoldenrod;
+}
+.window {
+    background-color: goldenrod;
+    padding: 1em;
+    width: 50%;
+    border: solid 2px darkorange;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.7);
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    z-index: 10;
+    display: none;
+}
+.window a {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    text-decoration: none;
+/*    color: darkslateblue!important;*/
+}
+
+#blackOut {
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: none;  
+}
+
+/* rSlides: http://responsiveslides.com/*/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+.rslides_tabs {
+    background-color: black;
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+}
+.rslides_tabs a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+

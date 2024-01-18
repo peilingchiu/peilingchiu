@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery examples</title>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  
+  <script>
+    /*
+    $(document).ready(function(){
+        alert('It is loaded');
+    });
+    */
+      $(function(){
+//          alert('this is shorthand');
+          $('h1').css({'color':'red', 'font-weight':'normal'});
+          $('#callout').css('font-style', 'italic');
+          $('h2.extra').css('background-color','teal');
+          $('li:first').css('color','orange');
+          $('li:nth-child(3)').css('color','hotpink');
+          $('[href]').css('color','forestgreen');
+          $("a[target='_blank']").css('background-color','yellow');
+          $('li:even').css('background-color','#ccc');
+          $('.window [href]').css('color', 'darkslateblue');
+          
+          $('a[href="#"]').mouseenter(function(){
+              $('.window').fadeIn(2000);
+              $('#blackOut').fadeIn(1000);
+          });
+          //.window is a classs, look at the end of the page
+          $('.window a').click(function(){
+              $('.window').hide();
+              $('#blackOut').hide();
+          });
+      });
+  </script>
+  
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+
+</head>
+<body>
+    <h1>Hello out there</h1>
+    <h2>Subheading 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore labore ratione, numquam debitis non aliquam neque consequatur veritatis <a href="#">open special message</a> THIS IS A VERY SPECIAL MESSAGE</p>
+    <h2>Subheading 2</h2>
+    <p id="callout">Laboriosam ipsum, rerum deleniti reiciendis temporibus ullam pariatur soluta doloremque distinctio blanditiis, quam cupiditate <a href="https://jquery.com/download/">jQuery</a> perspiciatis ut dolorem et assumenda quod eveniet delectus voluptate. Nostrum magnam, rem dolorem dolor voluptas voluptatum!</p>
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li class="extra">list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+    </ul>   
+    <h2 class="extra">Subheading 3</h2>
+    <p>Exercitationem labore, officia molestiae beatae quaerat voluptates eum iure <a href="https://google.com" target="_blank">look on google</a> blanditiis sequi illum asperiores veritatis magni repellat modi obcaecati facilis magnam nisi, eaque vel iste minima! Harum, incidunt maxime eveniet facere.</p>
+    <section class="window">
+        <h2>Special message</h2>
+        <p>This is the very special message ......  dolore similique possimus aliquam temporibus. Ea, alias, porro!</p>
+        <a href="#">X</a>
+    </section>
+    <div id="blackOut"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
