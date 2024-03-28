@@ -1,4 +1,5 @@
 - 👋 Hi, I’m @peilingchiu
+- I love teaching
 - 👀 I’m interested in web front end developement and RealEstate
 - 👀 I’m also looking for someone to play music with I am a keyboard player
 - 🌱 I’m currently learning network configuration and GitHub
